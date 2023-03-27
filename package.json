@@ -28,9 +28,15 @@
   },
   "homepage": "https://github.com/choisohyun/react-vite-ts-boilerplate#readme",
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.3",
+    "@web3-react/core": "8.0.35-beta.0",
+    "@web3-react/metamask": "8.0.28-beta.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-router-dom": "6.4.3"
+    "react-redux": "^8.0.5",
+    "react-router-dom": "6.4.3",
+    "redux": "^4.2.1",
+    "redux-localstorage-simple": "^2.5.1"
   },
   "devDependencies": {
     "@commitlint/cli": "17.1.2",
@@ -46,6 +52,7 @@
     "@types/node": "18.0.0",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
+    "@types/react-redux": "^7.1.25",
     "@typescript-eslint/eslint-plugin": "5.43.0",
     "@typescript-eslint/parser": "5.43.0",
     "@vitejs/plugin-react": "2.1.0",
