@@ -2,7 +2,7 @@ import React, { PropsWithChildren, useMemo } from 'react';
 import { useWeb3React } from '@web3-react/core';
 import { useAppDispatch } from '@/state/hooks';
 import { updateSelectedWallet } from '@/state/user/reducer';
-import { Connection, getConnection, getConnections } from '@/connection';
+import { getConnection } from '@/connection';
 
 export interface IWalletContext {
   onDisconnect: () => void;
