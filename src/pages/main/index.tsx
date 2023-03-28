@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Text from '@/components/Text';
 
 const Container = styled.div`
   background-color: #0a53be;
@@ -8,7 +9,7 @@ const Container = styled.div`
 const Main = () => {
   return (
     <Container>
-      <h2>Hello Vite + React!</h2>
+      <Text size="regular">TEST</Text>
     </Container>
   );
 };

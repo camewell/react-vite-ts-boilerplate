@@ -5,9 +5,11 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "prod": "vite build",
+    "build": "vite build",
+    "serve": "vite preview",
     "serve:dist": "http-server dist",
-    "release": "standard-version",
+    "lint:js": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:js:fix": "eslint . --fix --ext .js,.jsx,.ts,.tsx",
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "semantic-release": "semantic-release"
