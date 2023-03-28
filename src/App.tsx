@@ -5,14 +5,20 @@ import Web3Provider from '@/components/Web3Provider';
 import { Provider } from 'react-redux';
 import store from '@/state';
 import { WalletProvider } from '@/contexts/wallet-context';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ThemeProvider, { ThemedGlobalStyle } from '@/theme/theme';
+import './reset.scss';
 
 const App = () => {
   const element = useRoutes(routes);
   return (
     <Provider store={store}>
-      <Web3Provider>
-        <WalletProvider>{element}</WalletProvider>
-      </Web3Provider>
+      <ThemeProvider>
+        <ThemedGlobalStyle />
+        <Web3Provider>
+          <WalletProvider>{element}</WalletProvider>
+        </Web3Provider>
+      </ThemeProvider>
     </Provider>
   );
 };

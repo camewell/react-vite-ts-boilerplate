@@ -4,6 +4,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 import { createHtmlPlugin } from 'vite-plugin-html';
 import checker from 'vite-plugin-checker';
 import path from 'path';
+import macrosPlugin from 'vite-plugin-babel-macros';
 
 import { dependencies } from './package.json';
 function renderChunks(deps) {
@@ -19,10 +20,22 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, 'env');
 
   return {
-    server: { hmr: true },
+    server: { hmr: true, port: 3000 },
     plugins: [
+      macrosPlugin(),
       react({
         include: ['**/*.tsx', '**/*.ts'],
+        babel: {
+          plugins: [
+            [
+              'babel-plugin-styled-components',
+              {
+                displayName: true,
+                fileName: false,
+              },
+            ],
+          ],
+        },
       }),
       tsconfigPaths(),
       createHtmlPlugin({

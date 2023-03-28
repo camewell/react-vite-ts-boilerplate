@@ -1,21 +1,15 @@
-import React, { useMemo } from 'react';
-import { useCounter } from '@/hooks/useCounter';
+import React from 'react';
+import styled from 'styled-components';
+
+const Container = styled.div`
+  background-color: #0a53be;
+`;
 
 const Main = () => {
-  const { count, increment } = useCounter();
-
-  const env: 'development' | 'production' = useMemo(() => {
-    return import.meta.env.VITE_TEST || process.env.NODE_ENV === 'test' ? 'development' : 'production';
-  }, []);
-
   return (
-    <>
-      <h2 className="test">Hello Vite + React!</h2>
-      <p className="env">{env}</p>
-      <button type="button" onClick={increment}>
-        count is: {count}
-      </button>
-    </>
+    <Container>
+      <h2>Hello Vite + React!</h2>
+    </Container>
   );
 };
 
