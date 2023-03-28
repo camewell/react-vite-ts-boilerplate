@@ -2183,41 +2183,41 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@web3-react/core@npm:8.0.35-beta.0":
-  version: 8.0.35-beta.0
-  resolution: "@web3-react/core@npm:8.0.35-beta.0"
+"@web3-react/core@npm:^8.1.2-beta.0":
+  version: 8.1.2-beta.0
+  resolution: "@web3-react/core@npm:8.1.2-beta.0"
   dependencies:
     "@ethersproject/providers": "npm:^5"
-    "@web3-react/store": "npm:^8.0.25-beta.0"
-    "@web3-react/types": "npm:^8.0.20-beta.0"
-    zustand: "npm:^4.0.0-rc.0"
+    "@web3-react/store": "npm:^8.1.2-beta.0"
+    "@web3-react/types": "npm:^8.1.2-beta.0"
+    zustand: "npm:^4.3.5"
   peerDependencies:
     react: ">=16.8"
   dependenciesMeta:
     "@ethersproject/providers":
       optional: true
-  checksum: 6f9b6f48639cde16ce09bc463f10e4ad16cd2f0fc4c0795450ae7a67c3308018aca64cc3c9e8b5ec87a5ba2502704bcdfe97936bc1ac2013f97bc3396c1d2d30
+  checksum: 123e2fab9333b54467f5181319f8c8170cbe622d45ee57762f5e6bb5992ab04fa1f769eaa1e77413b2918572b7b8def42bf4f4ef18b676bbce51a40d1fbec114
   languageName: node
   linkType: hard
 
-"@web3-react/metamask@npm:8.0.28-beta.0":
-  version: 8.0.28-beta.0
-  resolution: "@web3-react/metamask@npm:8.0.28-beta.0"
+"@web3-react/metamask@npm:^8.0.30-beta.0":
+  version: 8.0.30-beta.0
+  resolution: "@web3-react/metamask@npm:8.0.30-beta.0"
   dependencies:
     "@metamask/detect-provider": "npm:^1.2.0"
     "@web3-react/types": "npm:^8.0.20-beta.0"
-  checksum: a076522c1184b74387cda5310a87e9b4af37b720fdb58e56f7939a21f85eeafc69e5373755dae32c855c01da70bd7d1160b659dd351952b52d9f71af15a9ab25
+  checksum: ad8ee1891fac0273836972c12267b13b0b2d140e4840b0aab537199a58617f1243758e9eba22059559691b6e6d26eb2c3e2f7bd50017d6b21cdaa4ef831a6959
   languageName: node
   linkType: hard
 
-"@web3-react/store@npm:^8.0.25-beta.0":
-  version: 8.0.25-beta.0
-  resolution: "@web3-react/store@npm:8.0.25-beta.0"
+"@web3-react/store@npm:^8.1.2-beta.0":
+  version: 8.1.2-beta.0
+  resolution: "@web3-react/store@npm:8.1.2-beta.0"
   dependencies:
     "@ethersproject/address": "npm:^5"
-    "@web3-react/types": "npm:^8.0.20-beta.0"
-    zustand: "npm:^4.0.0-rc.0"
-  checksum: 13fbe248673c9ff43e0148fcc005d8284aec5a44452873d1d47495af058bae6c3fda846598f6432023cb3b78238748c58af384a14d17ff5f4286b082a155ab19
+    "@web3-react/types": "npm:^8.1.2-beta.0"
+    zustand: "npm:^4.3.5"
+  checksum: 0dda1ba6bee2d443c78b62b2ccecb5ced22443808504076d17392dda45f4034dd9a93d72175fd5e2ceef7401cb8c2bd4c17105323dff3d3870e5f4e82a84c61d
   languageName: node
   linkType: hard
 
@@ -2227,6 +2227,15 @@ __metadata:
   dependencies:
     zustand: "npm:^4.0.0-rc.0"
   checksum: 02fff195016191aee3855935e9c3fee17e9b73db1ae141fc92b7fa77ef8e4a02dc505e3f8987863a6ec3d703a101ad6598d53204dea7b4604a84986542d56ea5
+  languageName: node
+  linkType: hard
+
+"@web3-react/types@npm:^8.1.2-beta.0":
+  version: 8.1.2-beta.0
+  resolution: "@web3-react/types@npm:8.1.2-beta.0"
+  dependencies:
+    zustand: "npm:^4.3.5"
+  checksum: d3a0f63266cacac8a2d0289261ecf71222e7561f4155fc6020325c204ddcac22c230cf3b43e6822dfa92db95bea5fd20b73356f43927cebd56fb2c44d68bce1e
   languageName: node
   linkType: hard
 
@@ -8721,8 +8730,8 @@ __metadata:
     "@typescript-eslint/parser": "npm:5.43.0"
     "@vitejs/plugin-react": "npm:2.1.0"
     "@vitest/ui": "npm:0.23.2"
-    "@web3-react/core": "npm:8.0.35-beta.0"
-    "@web3-react/metamask": "npm:8.0.28-beta.0"
+    "@web3-react/core": "npm:^8.1.2-beta.0"
+    "@web3-react/metamask": "npm:^8.0.30-beta.0"
     autoprefixer: "npm:10.4.13"
     babel-polyfill: "npm:6.26.0"
     c8: "npm:7.12.0"
@@ -10896,7 +10905,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zustand@npm:^4.0.0-rc.0":
+"zustand@npm:^4.0.0-rc.0, zustand@npm:^4.3.5":
   version: 4.3.6
   resolution: "zustand@npm:4.3.6"
   dependencies:
