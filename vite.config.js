@@ -5,6 +5,7 @@ import { createHtmlPlugin } from 'vite-plugin-html';
 import checker from 'vite-plugin-checker';
 import path from 'path';
 import macrosPlugin from 'vite-plugin-babel-macros';
+import { visualizer } from 'rollup-plugin-visualizer';
 
 import { dependencies } from './package.json';
 function renderChunks(deps) {
@@ -22,6 +23,13 @@ export default defineConfig(({ mode }) => {
   return {
     server: { hmr: true, port: 3000 },
     plugins: [
+      visualizer({
+        template: 'treemap', // or sunburst
+        open: true,
+        gzipSize: true,
+        brotliSize: true,
+        filename: 'analice.html',
+      }),
       macrosPlugin(),
       react({
         include: ['**/*.tsx', '**/*.ts'],
