@@ -1,30 +1,7 @@
-import { Web3ReactHooks } from '@web3-react/core';
 import { Connector } from '@web3-react/types';
-import { metaMask, hooks as metaMaskHooks } from '@/connectors/metaMask';
 import { useCallback } from 'react';
-
-export enum ConnectionType {
-  METAMASK = 'METAMASK',
-}
-
-export interface Connection {
-  name: string;
-  connector: Connector;
-  hooks: Web3ReactHooks;
-  type: ConnectionType;
-  icon?: string;
-  shouldDisplay?: boolean;
-  overrideActivate?: () => void;
-}
-
-const MetamaskConnection: Omit<Connection, 'icon'> = {
-  name: 'MetaMask',
-  connector: metaMask,
-  hooks: metaMaskHooks,
-  type: ConnectionType.METAMASK,
-  shouldDisplay: true,
-  overrideActivate: () => window.open('https://metamask.io/', 'inst_metamask'),
-};
+import { MetamaskConnection } from '@/connectors/metaMask';
+import { ConnectionType } from '@/connection/types';
 
 export function getConnections() {
   return [MetamaskConnection];
